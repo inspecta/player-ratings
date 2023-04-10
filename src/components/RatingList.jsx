@@ -1,18 +1,26 @@
-import React from 'react'
-import RatingItem from './RatingItem'
+import PropTypes from 'prop-types';
+import RatingItem from './RatingItem';
 
-const RatingList = ({ data }) => {
+const RatingList = ({ data, handleDelete }) => {
   if (!data || !data.length) {
-    return <p>No player ratings available.</p>
+    return <div className="text-xl text-white px-4">No player ratings available.</div>;
   }
-
   return (
     <div>
       {data.map((player) => (
-        <RatingItem key={player.id} player={player}/>
+        <RatingItem
+          key={player.id}
+          player={player}
+          handleDelete={handleDelete}
+        />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default RatingList
+RatingList.propTypes = {
+  data: PropTypes.objectOf.isRequired,
+  handleDelete: PropTypes.func.isRequired,
+};
+
+export default RatingList;
