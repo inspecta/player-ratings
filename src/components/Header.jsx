@@ -1,11 +1,6 @@
-import React from 'react';
-
-const Header = () => {
-  return (
-    <div>
+const Header = () => (<header className="text-center p-6 text-2xl">
       <h1>Player Ratings UI</h1>
-    </div>
+    </header>
   )
-}
 
-export default Header
+export default Header;
