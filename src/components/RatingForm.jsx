@@ -35,6 +35,9 @@ const RatingForm = ({ addNewRating }) => {
     };
 
     addNewRating(newRatingObj);
+    input.name = '';
+    input.reason = '';
+    input.rating = '';
   };
 
   return (

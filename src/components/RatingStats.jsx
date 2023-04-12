@@ -9,7 +9,7 @@ const RatingStats = ({ data }) => {
   average = average.toFixed(1).replace(/[.,]0$/, '');
 
   return (
-    <div className="w-3/4 flex justify-between mx-auto py-4 text-xl text-white
+    <div className="w-3/4 flex justify-between mx-auto py-4 text-xl text-pallete-200
     lg:w-1/2"
     >
       <h4>
