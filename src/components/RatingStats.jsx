@@ -9,9 +9,11 @@ const RatingStats = ({ data }) => {
   average = average.toFixed(1).replace(/[.,]0$/, '');
 
   return (
-    <div className="w-3/4 flex justify-between mx-auto py-4 text-xl text-white">
+    <div className="w-3/4 flex justify-between mx-auto py-4 text-xl text-white lg:w-1/2">
       <h4>
+        (
         {data.length}
+        )
         <span className="px-1">Players</span>
       </h4>
       <h4>
@@ -23,7 +25,10 @@ const RatingStats = ({ data }) => {
 };
 
 RatingStats.propTypes = {
-  data: PropTypes.objectOf.isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    rating: PropTypes.number.isRequired,
+  })).isRequired,
+
 };
 
 export default RatingStats;

@@ -13,7 +13,7 @@ const RatingItem = ({ player, handleDelete }) => (
       <div className="w-full flex flex-row justify-between">
         <h1 className="text-xl">{player.name}</h1>
         <button type="button" onClick={() => handleDelete(player.id)}>
-          <FaTimes color="blue" className="cursor-pointer" />
+          <FaTimes className="cursor-pointer text-blue-600 hover:text-red-600" />
         </button>
       </div>
       <p className="text-sm">{player.reason}</p>

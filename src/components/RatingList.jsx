@@ -19,7 +19,11 @@ const RatingList = ({ data, handleDelete }) => {
 };
 
 RatingList.propTypes = {
-  data: PropTypes.objectOf.isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  })).isRequired,
   handleDelete: PropTypes.func.isRequired,
 };
 
