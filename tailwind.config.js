@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      nunito: ["Nunito", "cursive"],
+      nunito: ['Nunito', 'cursive'],
     },
     extend: {
       colors: {
@@ -15,9 +15,9 @@ module.exports = {
           200: '#9c3587',
           300: '#653780',
           400: '#3f1651',
-        }
-      }
-    }
+        },
+      },
+    },
   },
   plugins: [],
 };

@@ -21,7 +21,6 @@ function App() {
     const newId = uuidv4();
     const newRatingObjWithId = { ...newRatingObj, id: newId };
     setRatingData([newRatingObjWithId, ...ratingData]);
-    console.log(ratingData);
   };
 
   return (
