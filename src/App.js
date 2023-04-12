@@ -10,6 +10,7 @@ function App() {
   const [ratingData, setRatingData] = useState(playersData);
 
   const deletePlayerRating = (id) => {
+    // eslint-disable-next-line no-alert
     if (window.confirm('Are you sure you want to delete')) {
       setRatingData(
         ratingData.filter((x) => x.id !== id),
