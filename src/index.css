@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .input-control {
+    width: 75%;
+    border-radius: 0.37rem;
+    padding: 0.75rem 1rem;
+    border: 0.2px solid #f89f5b;
+  }
+}
