@@ -71,6 +71,10 @@ Developed using React, and the app state managed using React Hooks (Going up and
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Screenshot
+
+![](./app_screenshot.png)
+
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
