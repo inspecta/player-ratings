@@ -79,9 +79,7 @@ Developed using React, and the app state managed using React Hooks (Going up and
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://rating-players-derrick.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
