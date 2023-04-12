@@ -3,7 +3,13 @@ import RatingItem from './RatingItem';
 
 const RatingList = ({ data, handleDelete }) => {
   if (!data || !data.length) {
-    return <div className="text-xl text-white px-4">No player ratings available.</div>;
+    return (
+      <div className="w-1/2 mx-auto rounded-md text-xl text-white py-1
+        text-center bg-pallete-50 mt-5"
+      >
+        No player ratings available.
+      </div>
+    );
   }
   return (
     <div>

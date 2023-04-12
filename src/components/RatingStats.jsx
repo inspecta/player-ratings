@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const RatingStats = ({ data }) => {
   let average = data.reduce(
     (acc, cur) => (acc + cur.rating), 0,
-  ) / data.length;
+  ) / data.length || 0;
 
   average = average.toFixed(1).replace(/[.,]0$/, '');
 
