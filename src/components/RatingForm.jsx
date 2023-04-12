@@ -9,7 +9,7 @@ const RatingForm = ({ addNewRating }) => {
   });
 
   const [isDisabled, setIsDisabled] = useState(true);
-  const [rating, setRating] = useState(10);
+  const [rating, setRating] = useState(0);
 
   const handleInput = (e) => {
     setInput({
@@ -39,8 +39,8 @@ const RatingForm = ({ addNewRating }) => {
 
   return (
     <div className="flex flex-col items-center text-center">
-      <h4 className="text-2xl">How would rate a player?</h4>
-      <form className="w-full" onSubmit={handleSubmitForm}>
+      <h4 className="text-2xl py-3">How would rate a player?</h4>
+      <form className="w-full lg:w-3/4" onSubmit={handleSubmitForm}>
         <div className="mb-2">
           <input
             type="text"
@@ -49,7 +49,7 @@ const RatingForm = ({ addNewRating }) => {
             onChange={handleInput}
             value={input.name}
             id="name"
-            className="w-3/4 rounded-md lg:w-1/2 px-4 py-3"
+            className="input-control focus:outline-0 focus:border-green-400"
             required
           />
         </div>
@@ -57,11 +57,11 @@ const RatingForm = ({ addNewRating }) => {
           <textarea
             name="reason"
             rows="3"
-            placeholder="Add reason"
+            placeholder="Add reason for rating."
             onChange={handleInput}
             value={input.reason}
             id="reason"
-            className="w-3/4 rounded-md lg:w-1/2 px-4 py-3"
+            className="input-control focus:outline-0 focus:border-green-400"
             required
           />
         </div>
@@ -70,8 +70,8 @@ const RatingForm = ({ addNewRating }) => {
           <button
             type="submit"
             className="
-              bg-blue-400 border rounded-md w-[100px] py-2 mt-3 hover:bg-blue-600
-              hover:text-white disabled:bg-gray-300 disabled:text-gray-600
+              bg-pallete-100 text-gray-50 border-0 rounded-md w-[100px] py-2 mt-3
+              hover:bg-pallete-200 hover:text-white disabled:bg-gray-300 disabled:text-gray-600
               disabled:border-0"
             disabled={isDisabled}
           >

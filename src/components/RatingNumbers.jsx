@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const RatingNumbers = ({ select }) => {
-  const [selected, setSelected] = useState(9);
+  const [selected, setSelected] = useState(0);
 
   const handleChange = (e) => {
     setSelected(+e.currentTarget.value);
@@ -23,8 +23,11 @@ const RatingNumbers = ({ select }) => {
   ];
 
   return (
-    <div className="w-3/4 text-center">
-      <ul className="flex">
+    <div className="w-3/4 mx-auto">
+      <ul className="
+        w-full grid grid-cols-4 flex-grow md:grid md:grid-cols-5
+        lg:grid-cols-10"
+      >
         {nums.map((x) => (
           (
             <li key={x[1]} className="p-3 flex">
@@ -35,8 +38,11 @@ const RatingNumbers = ({ select }) => {
                 value={x[1]}
                 onChange={handleChange}
                 checked={selected === +`${x[1]}`}
+                className="w-8 cursor-pointer hover:border-pallete-50
+                hover:fill-pallete-50 checked:bg-pallete-100 checked:border-red-500"
+                required
               />
-              <span htmlFor={x[0]}>{x[1]}</span>
+              <span htmlFor={x[0]} className="text-pallete-400 font-bold">{x[1]}</span>
             </li>
           )
         ))}

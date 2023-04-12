@@ -25,7 +25,9 @@ function App() {
   };
 
   return (
-    <div className="bg-blue-400">
+    <div className="
+      font-nunito h-screen"
+    >
       <Header />
       <RatingForm addNewRating={handleAddNewRating} />
       <RatingStats data={ratingData} />
