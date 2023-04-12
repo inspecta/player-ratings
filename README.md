@@ -209,7 +209,7 @@ I would like to thank my mother for her continued support.
 
 - **Can I contribute to this project?**
 
-  - Yes please. Contact me at **djmulinder@gmail.com** and I will add you as a contributor.
+  - Yes please. Contact me at **djmulinde@gmail.com** and I will add you as a contributor.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
