@@ -20,7 +20,10 @@ const RatingItem = ({ player, handleDelete, handleReasonUpdate }) => {
 
   const handleSave = () => {
     seteditingReason(false);
-    handleReasonUpdate(player.id, reason);
+    if (reason.length > 1) {
+      handleReasonUpdate(player.id, reason);
+    }
+    return false;
   };
 
   const handleReasonChange = (event) => {
@@ -29,7 +32,7 @@ const RatingItem = ({ player, handleDelete, handleReasonUpdate }) => {
 
   return (
     <Card className="flex flex-row">
-      <div className="rounded-lg text-3xl text-pallete-100 font-bold
+      <div className="rounded-l-lg text-3xl text-pallete-100 font-bold
       text-center w-[100px] p-4 absolute inset-0 flex justify-center items-center
       bg-gradient-to-r from-pallete-50 to-gray-100"
       >
@@ -37,8 +40,10 @@ const RatingItem = ({ player, handleDelete, handleReasonUpdate }) => {
       </div>
       <div className="flex-grow ml-[100px]">
         <div className="w-full flex flex-row justify-between">
-          <h1 className="text-2xl font-bold text-pallete-300">{player.name}</h1>
-          <div>
+          <h1 className="text-md font-bold text-pallete-300 md:text-xl lg:text-2xl">
+            {player.name}
+          </h1>
+          <div className="flex items-center">
             {editingReason ? (
               <>
                 <button type="button" onClick={() => handleSave(player.id, reason)}>
@@ -73,7 +78,7 @@ const RatingItem = ({ player, handleDelete, handleReasonUpdate }) => {
             required
           />
         ) : (
-          <p className="text-sm text-justify">{player.reason}</p>
+          <p className="text-xs text-justify md:text-sm">{player.reason}</p>
         )}
       </div>
     </Card>

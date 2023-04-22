@@ -25,7 +25,7 @@ const RatingNumbers = ({ select }) => {
   return (
     <div className="w-3/4 mx-auto">
       <ul className="
-        w-full grid grid-cols-4 flex-grow md:grid md:grid-cols-5
+        w-full grid grid-cols-5 flex-grow md:grid md:grid-cols-5
         lg:grid-cols-10"
       >
         {nums.map((x) => (

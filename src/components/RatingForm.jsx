@@ -60,7 +60,7 @@ const RatingForm = ({ addNewRating }) => {
           <textarea
             name="reason"
             rows="3"
-            placeholder="Add reason for rating."
+            placeholder="Enter reason for rating"
             onChange={handleInput}
             value={input.reason}
             id="reason"
