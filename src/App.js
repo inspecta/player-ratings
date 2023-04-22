@@ -24,6 +24,20 @@ function App() {
     setRatingData([newRatingObjWithId, ...ratingData]);
   };
 
+  const updatePlayerReason = (id, reason) => {
+    setRatingData(
+      ratingData.map((player) => {
+        if (player.id === id) {
+          return {
+            ...player,
+            reason,
+          };
+        }
+        return player;
+      }),
+    );
+  };
+
   return (
     <div className="
       font-nunito h-screen"
@@ -34,6 +48,7 @@ function App() {
       <RatingList
         data={ratingData}
         handleDelete={deletePlayerRating}
+        handleReasonUpdate={updatePlayerReason}
       />
     </div>
   );

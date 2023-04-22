@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import RatingItem from './RatingItem';
 
-const RatingList = ({ data, handleDelete }) => {
+const RatingList = ({ data, handleDelete, handleReasonUpdate }) => {
   if (!data || !data.length) {
     return (
       <div className="w-1/2 mx-auto rounded-md text-xl text-white py-1
@@ -18,6 +18,7 @@ const RatingList = ({ data, handleDelete }) => {
           key={player.id}
           player={player}
           handleDelete={handleDelete}
+          handleReasonUpdate={handleReasonUpdate}
         />
       ))}
     </div>
@@ -31,6 +32,7 @@ RatingList.propTypes = {
     rating: PropTypes.number.isRequired,
   })).isRequired,
   handleDelete: PropTypes.func.isRequired,
+  handleReasonUpdate: PropTypes.func.isRequired,
 };
 
 export default RatingList;
