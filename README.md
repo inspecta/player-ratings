@@ -32,9 +32,8 @@
 
 # 📖 Player Ratings App <a name="about-project"></a>
 
-**Player Ratings App** is a simple React app that helps the user to collect ratings of football players after a game.
-Rate your players out of 10 depending on how they performed in the game.
-Developed using React, and the app state managed using React Hooks (Going up and down the app)
+**Player Ratings App** is a simple React app that helps the user to collect ratings of football players after a game. Rate your players out of 10 depending on how they performed in the game. Delete, edit or update any player rating.
+Developed using React, and the app state is managed using React Hooks (Going up and down the app)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -67,7 +66,7 @@ Developed using React, and the app state managed using React Hooks (Going up and
 
 - **[key_feature_1]** Add Player details
 - **[key_feature_2]** Add player rating and reason for the rating.
-- **[key_feature_3]** Add rating and also delete unwanted rating
+- **[key_feature_3]** Eidt rating and also delete unwanted rating
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,16 +92,8 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
   - Node.js installed
-  - VS Code
-  - Chrome Browser
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+  - Text editor (Preferrably VS Code)
+  - Browser (Chrome or IE)
 
 ### Setup
 
@@ -136,18 +127,9 @@ To run tests, run the following command:
 
 - None at the moment
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
 ### Deployment
 
-You can deploy this project using Netlify
-
+You can deploy this project using Netlify or GitHub pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,9 +149,9 @@ You can deploy this project using Netlify
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]** I hope to add animation features
-- [ ] **[new_feature_2]** More CRUD operations (Edit and Update Ratings)
-- [ ] **[new_feature_3]** User feedback features after an operation
+- [ ] **[I hope to add animation features]** 
+- [ ] **[A backend to permanently store these ratings]** 
+- [ ] **[User feedback features after an operation]** 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
